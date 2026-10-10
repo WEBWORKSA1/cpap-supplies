@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | CPAP.Supplies</title>
+    <meta name="description" content="Privacy Policy for CPAP.Supplies — how we collect, use, and protect your information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --navy: #0B1D3A;
+            --navy-light: #132B4F;
+            --teal: #1A8A7D;
+            --teal-light: #22B8A6;
+            --teal-glow: #2EDDC7;
+            --sky: #E8F4F8;
+            --white: #FFFFFF;
+            --gray-50: #F8FAFB;
+            --gray-100: #F1F5F9;
+            --gray-200: #E2E8F0;
+            --gray-300: #CBD5E1;
+            --gray-500: #64748B;
+            --gray-600: #475569;
+            --gray-700: #334155;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--navy);
+            background: var(--white);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Fraunces', serif;
+        }
+
+        a {
+            color: var(--teal);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--teal-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* ── Header ── */
+        .header {
+            background: var(--navy);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(11,29,58,0.25);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            height: 70px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--teal), var(--teal-glow));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--white);
+        }
+
+        .logo-text {
+            font-family: 'Fraunces', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .logo-text span {
+            color: var(--teal-glow);
+        }
+
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-desktop a {
+            color: var(--gray-300);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-desktop a:hover {
+            color: var(--white);
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--teal), var(--teal-light));
+            color: var(--white) !important;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .nav-cta:hover {
+            opacity: 0.9;
+            color: var(--white) !important;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        .mobile-nav {
+            display: none;
+            background: var(--navy-light);
+            padding: 16px;
+        }
+
+        .mobile-nav.open {
+            display: block;
+        }
+
+        .mobile-nav a {
+            display: block;
+            color: var(--gray-300);
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--white);
+        }
+
+        @media (max-width: 900px) {
+            .nav-desktop { display: none; }
+            .mobile-toggle { display: block; }
+        }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            padding: 60px 16px 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .hero .updated {
+            color: var(--gray-300);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 40px 16px 36px; }
+        }
+
+        /* ── Content ── */
+        .policy-wrapper {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 16px 80px;
+        }
+
+        @media (max-width: 900px) {
+            .policy-wrapper {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+
+        /* ── Table of Contents ── */
+        .toc {
+            position: sticky;
+            top: 90px;
+            align-self: start;
+        }
+
+        .toc h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gray-500);
+            margin-bottom: 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+        }
+
+        .toc li {
+            counter-increment: toc-counter;
+        }
+
+        .toc a {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            color: var(--gray-600);
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .toc a::before {
+            content: counter(toc-counter) ".";
+            font-weight: 600;
+            color: var(--teal);
+            min-width: 20px;
+        }
+
+        .toc a:hover, .toc a.active {
+            background: var(--sky);
+            color: var(--navy);
+        }
+
+        @media (max-width: 900px) {
+            .toc {
+                position: static;
+                background: var(--gray-50);
+                border-radius: 12px;
+                padding: 24px;
+                margin-bottom: 36px;
+            }
+        }
+
+        /* ── Policy Body ── */
+        .policy-body section {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .policy-body section:last-child {
+            border-bottom: none;
+        }
+
+        .policy-body h2 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .section-num {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--teal);
+            background: var(--sky);
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .policy-body h3 {
+            font-size: 1.1rem;
+            color: var(--navy);
+            margin: 24px 0 10px;
+        }
+
+        .policy-body p {
+            color: var(--gray-700);
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+
+        .policy-body ul {
+            margin: 10px 0 18px 20px;
+            color: var(--gray-700);
+        }
+
+        .policy-body li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .policy-body .highlight-box {
+            background: var(--sky);
+            border-left: 4px solid var(--teal);
+            padding: 18px 22px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .policy-body .highlight-box p {
+            color: var(--navy);
+            margin-bottom: 0;
+        }
+
+        .policy-body .contact-card {
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .policy-body .contact-card a {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            background: var(--navy);
+            color: var(--gray-300);
+            padding: 60px 16px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+
+        .footer h4 {
+            font-family: 'Fraunces', serif;
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .footer a {
+            display: block;
+            color: var(--gray-300);
+            font-size: 0.88rem;
+            padding: 4px 0;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--teal-glow);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--gray-500);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom a {
+            display: inline;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ── Cookie Banner ── */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--navy);
+            color: var(--gray-300);
+            padding: 18px 16px;
+            z-index: 200;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+            display: none;
+        }
+
+        .cookie-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cookie-inner p {
+            font-size: 0.88rem;
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .cookie-btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cookie-accept {
+            background: linear-gradient(135deg, var(--teal), var(--teal-light));
+            color: var(--white);
+            border: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .cookie-learn {
+            background: transparent;
+            color: var(--gray-300);
+            border: 1px solid var(--gray-500);
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .cookie-learn:hover {
+            border-color: var(--white);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <a href="/" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <span class="logo-text">CPAP<span>.Supplies</span></span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="/common-problems">Common Problems</a>
+            <a href="/guides">Guides</a>
+            <a href="/products">Products</a>
+            <a href="/compare">Compare</a>
+            <a href="/blog">Blog</a>
+            <a href="/advertise">Advertise</a>
+            <a href="/calculator" class="nav-cta">Supply Calculator</a>
+        </nav>
+        <button class="mobile-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav">
+        <a href="/common-problems">Common Problems</a>
+        <a href="/guides">Guides</a>
+        <a href="/products">Products</a>
+        <a href="/compare">Compare</a>
+        <a href="/blog">Blog</a>
+        <a href="/advertise">Advertise</a>
+        <a href="/calculator">Supply Calculator</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last Updated: October 2026</p>
+    </div>
+</section>
+
+<!-- Policy Content -->
+<div class="policy-wrapper">
+
+    <!-- Table of Contents -->
+    <aside class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li><a href="#info-collect">Information We Collect</a></li>
+            <li><a href="#how-use">How We Use Your Information</a></li>
+            <li><a href="#cookies">Cookies &amp; Tracking Technologies</a></li>
+            <li><a href="#adsense">Google AdSense &amp; Advertising</a></li>
+            <li><a href="#amazon">Amazon Associates Disclosure</a></li>
+            <li><a href="#third-party">Third-Party Links</a></li>
+            <li><a href="#security">Data Security</a></li>
+            <li><a href="#children">Children's Privacy</a></li>
+            <li><a href="#rights">Your Rights</a></li>
+            <li><a href="#changes">Changes to This Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ol>
+    </aside>
+
+    <!-- Policy Body -->
+    <div class="policy-body">
+
+        <p>At CPAP.Supplies, your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>cpap.supplies</strong>. Please read this policy carefully. By using our site, you agree to the practices described herein.</p>
+
+        <!-- 1 -->
+        <section id="info-collect">
+            <h2><span class="section-num">1</span> Information We Collect</h2>
+
+            <h3>Personal Information</h3>
+            <p>We may collect personal information that you voluntarily provide when you:</p>
+            <ul>
+                <li>Subscribe to our email list or newsletter</li>
+                <li>Use our CPAP Supply Replacement Calculator</li>
+                <li>Fill out a contact form or send us an email</li>
+                <li>Leave a comment on a blog post</li>
+            </ul>
+            <p>This information may include your name, email address, and any other details you choose to provide.</p>
+
+            <h3>Usage Data</h3>
+            <p>When you visit our website, we automatically collect certain information about your device and browsing activity, including:</p>
+            <ul>
+                <li>IP address and approximate geographic location</li>
+                <li>Browser type and version</li>
+                <li>Operating system</li>
+                <li>Pages visited, time spent on pages, and referring URLs</li>
+                <li>Date and time of access</li>
+            </ul>
+
+            <h3>Cookies and Tracking Technologies</h3>
+            <p>We use cookies, web beacons, and similar tracking technologies to collect usage data and improve your experience. See <a href="#cookies">Section 3</a> for detailed information about our cookie practices.</p>
+        </section>
+
+        <!-- 2 -->
+        <section id="how-use">
+            <h2><span class="section-num">2</span> How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li><strong>Email Communications:</strong> To send you newsletters, CPAP supply replacement reminders, product recommendations, and updates you have opted into</li>
+                <li><strong>Site Improvement:</strong> To understand how visitors use our site, identify areas for improvement, and optimize content and user experience</li>
+                <li><strong>Analytics:</strong> To measure traffic patterns, page performance, and audience demographics via Google Analytics</li>
+                <li><strong>Advertising:</strong> To display relevant advertisements through Google AdSense and other advertising partners</li>
+                <li><strong>Customer Support:</strong> To respond to your inquiries, comments, or requests</li>
+            </ul>
+            <p>We do not sell, trade, or rent your personal information to third parties for their marketing purposes.</p>
+        </section>
+
+        <!-- 3 -->
+        <section id="cookies">
+            <h2><span class="section-num">3</span> Cookies &amp; Tracking Technologies</h2>
+            <p>Cookies are small text files placed on your device by websites you visit. We use the following types of cookies:</p>
+
+            <h3>Essential Cookies</h3>
+            <p>These cookies are necessary for the website to function properly. They enable basic features such as page navigation, remembering your cookie consent preferences, and maintaining session information. You cannot opt out of essential cookies as the site cannot function without them.</p>
+
+            <h3>Analytics Cookies (Google Analytics)</h3>
+            <p>We use Google Analytics to understand how visitors interact with our website. These cookies collect information about page visits, time on site, traffic sources, and user behavior in an anonymized and aggregated form. Google Analytics may set cookies such as <code>_ga</code>, <code>_gid</code>, and <code>_gat</code>.</p>
+            <p>For more information, review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+            <h3>Advertising Cookies (Google AdSense)</h3>
+            <div class="highlight-box">
+                <p>Google uses cookies to serve ads on our site. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to CPAP.Supplies and/or other sites on the Internet. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website and other websites.</p>
+            </div>
+            <p>These cookies allow advertising networks to deliver ads that are more relevant to you and your interests. They track your browsing activity across websites and build a profile of your interests to show you targeted advertisements.</p>
+
+            <h3>How to Manage Cookies</h3>
+            <p>You can control and manage cookies through your browser settings. Most browsers allow you to:</p>
+            <ul>
+                <li>View what cookies are stored and delete individual cookies</li>
+                <li>Block third-party cookies</li>
+                <li>Block all cookies from specific sites</li>
+                <li>Block all cookies from being set</li>
+                <li>Delete all cookies when you close your browser</li>
+            </ul>
+            <p>Please note that blocking or deleting cookies may affect your experience on our website and limit certain functionality.</p>
+
+            <h3>Opt-Out of Personalized Advertising</h3>
+            <p>You may opt out of personalized advertising by visiting:</p>
+            <ul>
+                <li><a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Personalization Settings</a></li>
+                <li><a href="https://www.networkadvertising.org/managing/opt_out.asp" target="_blank" rel="noopener">Network Advertising Initiative (NAI) Opt-Out Page</a></li>
+            </ul>
+        </section>
+
+        <!-- 4 -->
+        <section id="adsense">
+            <h2><span class="section-num">4</span> Google AdSense &amp; Advertising</h2>
+            <p>CPAP.Supplies uses Google AdSense to display advertisements. Google AdSense is a third-party advertising service provided by Google LLC.</p>
+
+            <h3>How Google AdSense Works</h3>
+            <p>Third-party ad networks, including Google, may use cookies, web beacons, and similar technologies to collect information about your browsing activity on our site and across other websites. This information is used to provide advertisements about goods and services that may be of interest to you.</p>
+
+            <h3>The DART Cookie</h3>
+            <p>Google uses the DART cookie to serve ads to users based on their visits to CPAP.Supplies and other sites on the Internet. The DART cookie is used by Google in the ads served on publisher websites displaying AdSense for content ads.</p>
+            <p>You may opt out of the use of the DART cookie by visiting the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google ad and content network privacy policy</a>.</p>
+
+            <h3>Third-Party Ad Servers</h3>
+            <p>Third-party ad servers or ad networks may use technology in their advertisements and links that appear on CPAP.Supplies, which are sent directly to your browser. They automatically receive your IP address when this occurs. Other technologies such as cookies, JavaScript, or web beacons may also be used by third-party ad networks to measure the effectiveness of their advertisements and to personalize the advertising content you see.</p>
+            <p>CPAP.Supplies has no access to or control over these cookies used by third-party advertisers. You should consult the respective privacy policies of these third-party ad servers for more detailed information on their practices.</p>
+            <p>For more details, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+        </section>
+
+        <!-- 5 -->
+        <section id="amazon">
+            <h2><span class="section-num">5</span> Amazon Associates Disclosure</h2>
+            <div class="highlight-box">
+                <p>CPAP.Supplies is a participant in the <strong>Amazon Services LLC Associates Program</strong>, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+            </div>
+            <p>As an Amazon Associate, we earn commissions from qualifying purchases made through affiliate links on our website. When you click on an Amazon affiliate link and make a purchase, we may receive a small commission at no additional cost to you.</p>
+            <p>Our product reviews and recommendations are based on research, user feedback, and editorial judgment. Affiliate relationships do not influence our editorial content or product rankings.</p>
+        </section>
+
+        <!-- 6 -->
+        <section id="third-party">
+            <h2><span class="section-num">6</span> Third-Party Links</h2>
+            <p>Our website may contain links to third-party websites, products, and services, including but not limited to product retailers, manufacturer websites, medical resources, and advertising partners.</p>
+            <p>CPAP.Supplies is not responsible for the privacy practices or the content of these third-party websites. We encourage you to review the privacy policies of any third-party sites you visit. The inclusion of a link on our website does not imply endorsement of the linked site or its practices.</p>
+        </section>
+
+        <!-- 7 -->
+        <section id="security">
+            <h2><span class="section-num">7</span> Data Security</h2>
+            <p>We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+            <ul>
+                <li>SSL/TLS encryption for data transmitted between your browser and our servers</li>
+                <li>Secure storage of email subscriber data through trusted third-party email service providers</li>
+                <li>Regular review of our data collection, storage, and processing practices</li>
+            </ul>
+            <p>However, no method of transmission over the Internet or electronic storage is completely secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee absolute security.</p>
+        </section>
+
+        <!-- 8 -->
+        <section id="children">
+            <h2><span class="section-num">8</span> Children's Privacy</h2>
+            <p>CPAP.Supplies is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:admin@cpap.supplies">admin@cpap.supplies</a> so we can take appropriate action.</p>
+            <p>In compliance with the Children's Online Privacy Protection Act (COPPA), if we discover that a child under 13 has provided us with personal information, we will promptly delete that information from our records.</p>
+        </section>
+
+        <!-- 9 -->
+        <section id="rights">
+            <h2><span class="section-num">9</span> Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> You have the right to request a copy of the personal information we hold about you</li>
+                <li><strong>Correction:</strong> You have the right to request that we correct any inaccurate or incomplete personal information</li>
+                <li><strong>Deletion:</strong> You have the right to request that we delete your personal information, subject to certain legal exceptions</li>
+                <li><strong>Opt-Out of Marketing Emails:</strong> You can unsubscribe from our email communications at any time by clicking the "unsubscribe" link at the bottom of any email we send, or by contacting us directly</li>
+                <li><strong>Opt-Out of Personalized Advertising:</strong> You can opt out of personalized ads by adjusting your settings through the links provided in <a href="#cookies">Section 3</a></li>
+            </ul>
+            <p>To exercise any of these rights, please contact us at <a href="mailto:admin@cpap.supplies">admin@cpap.supplies</a>. We will respond to your request within a reasonable timeframe.</p>
+        </section>
+
+        <!-- 10 -->
+        <section id="changes">
+            <h2><span class="section-num">10</span> Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make changes, we will revise the "Last Updated" date at the top of this page.</p>
+            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information. Your continued use of CPAP.Supplies after any changes to this policy constitutes your acceptance of the updated terms.</p>
+        </section>
+
+        <!-- 11 -->
+        <section id="contact">
+            <h2><span class="section-num">11</span> Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <div class="contact-card">
+                <p style="margin-bottom: 8px; color: var(--gray-500); font-size: 0.85rem;">Email us at</p>
+                <a href="mailto:admin@cpap.supplies">admin@cpap.supplies</a>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <h4>CPAP Problems</h4>
+            <a href="/mask-leaking">Mask Leaking</a>
+            <a href="/dry-mouth">Dry Mouth Fix</a>
+            <a href="/noise-solutions">Noise Solutions</a>
+            <a href="/pressure-issues">Pressure Issues</a>
+            <a href="/common-problems">All Problems</a>
+        </div>
+        <div>
+            <h4>Guides &amp; Reviews</h4>
+            <a href="/guides">CPAP Guides</a>
+            <a href="/products">Product Reviews</a>
+            <a href="/compare">Compare Products</a>
+            <a href="/cleaning-guide">Cleaning Guide</a>
+            <a href="/blog">Blog</a>
+        </div>
+        <div>
+            <h4>Tools</h4>
+            <a href="/calculator">Supply Calculator</a>
+            <a href="/quiz">Find Your Mask</a>
+            <a href="/checklist">New User Checklist</a>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="/about">About Us</a>
+            <a href="/advertise">Advertise</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Use</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 CPAP.Supplies. All rights reserved. CPAP.Supplies is a participant in the Amazon Services LLC Associates Program. Content is for informational purposes only and does not constitute medical advice. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Use</a></p>
+    </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-inner">
+        <p>We use cookies to improve your experience, analyze site traffic, and serve personalized ads through Google AdSense. By continuing to use this site, you consent to our use of cookies.</p>
+        <div class="cookie-btns">
+            <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+            <a href="#cookies" class="cookie-learn" onclick="acceptCookies()">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Cookie Consent
+    function acceptCookies() {
+        try {
+            localStorage.setItem('cpap_cookies_accepted', 'true');
+        } catch (e) {}
+        document.getElementById('cookieBanner').style.display = 'none';
+    }
+
+    (function() {
+        var accepted = false;
+        try {
+            accepted = localStorage.getItem('cpap_cookies_accepted') === 'true';
+        } catch (e) {}
+        if (!accepted) {
+            document.getElementById('cookieBanner').style.display = 'block';
+        }
+    })();
+
+    // TOC active state on scroll
+    (function() {
+        var sections = document.querySelectorAll('.policy-body section[id]');
+        var tocLinks = document.querySelectorAll('.toc a');
+
+        function onScroll() {
+            var scrollPos = window.scrollY + 120;
+            var current = '';
+            sections.forEach(function(section) {
+                if (section.offsetTop <= scrollPos) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(function(link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
