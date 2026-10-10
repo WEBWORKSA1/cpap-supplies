@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /subscribers/
+Disallow: /rate_limits/
+
+Sitemap: https://cpap.supplies/sitemap.xml
